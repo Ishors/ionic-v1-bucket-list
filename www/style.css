@@ -22,9 +22,14 @@
 .background{
     background-image: url('img/wallpaper.png');
 }
-#top{
-    z-index:10;
+.top{
+    z-index: 10;
 }
+
+.reduce-size{
+    height: 37px;
+}
+
 .test{
     background: white;
     display: inline-block;
@@ -70,14 +75,23 @@
 }
 
 .non{
-    margin-top : -6px;
+    margin-top : -12px;
     margin-bottom : 5px;
 }
 
 .padd{
-    margin-bottom: -10px;
+    margin-bottom: -13px;
 }
 
 .stroke{
     text-shadow: 1px 1px 2px black;
+}
+
+.icon{
+    zoom:0.8;
+}
+
+.footyfoot{
+    display: flex;
+    justify-content: center;
 }
