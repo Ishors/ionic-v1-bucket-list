@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="starter">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Ionic App</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="app.js"></script>
+    <script src="bucket-list/bucket-list.module.js"></script>
+    <script src="bucket-list/bucket-list.component.js"></script>
+    <script src="header/header.module.js"></script>
+    <script src="header/header.component.js"></script>
+    <script src="footer/footer.module.js"></script>
+    <script src="footer/footer.component.js"></script>
+  </head>
+  <body>
+    <ion-pane>
+      <bucket-list></bucket-list>
+      <header></header>
+      <footer></footer>
+    </ion-pane>
+  </body>
+</html>

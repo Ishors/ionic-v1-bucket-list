@@ -1,0 +1,51 @@
+/* Empty. Add your own CSS if you like */
+.italic{
+    font-style: italic;
+}
+
+.green{
+    background: linear-gradient(to right, rgba(0, 128, 0) ,  rgba(0, 255, 42));
+}
+
+.red{
+    background: rgba(128, 0, 0);
+}
+
+.blue{
+    background: rgb(12, 230, 230);
+}
+
+.orange{
+    background: linear-gradient(103.3deg, rgb(253, 109, 104) 7.7%, rgb(248, 150, 105) 90.8%);
+}
+
+.background{
+    background-image: url('img/wallpaper.png');
+}
+#top{
+    z-index:10;
+}
+.test{
+    background: white;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.rounded{
+    border-radius: 10px;
+}
+
+.contourned{
+    border: 3px solid white;
+}
+
+.popUp{
+    background : rgba(0, 0, 0, 0.7);
+}
+
+.hashtag{
+    padding: 5px;
+    display: inline-block;
+    border-radius: 7px;
+}

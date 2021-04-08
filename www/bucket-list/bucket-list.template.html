@@ -1,0 +1,16 @@
+<ion-header-bar>
+</ion-header-bar>
+<ion-content class="background">
+  <div class="card rounded contourned" ng-repeat="wish in $ctrl.wishes">
+    <div class="item item-text-wrap" ng-click="$ctrl.details(wish.title)"
+      ng-style="{'background-image': 'url(img/'+wish.photo+')', 'color':'white', 'background-position': 'center'}"
+      ng-class="wish.dueDate >= 2022 ? 'green' : (wish.dueDate < 2021 ? 'red' : 'orange')">
+      <!-- <div class="test">
+        <div ng-class="wish.dueDate >= 2022 ? 'blue' : (wish.dueDate < 2021 ? 'red' : 'orange')" class="hashtag">#1</div>-->
+        {{ wish.title }}
+     <!-- </div>-->
+    </div>
+  </div>
+</ion-content>
+<ion-footer-bar>
+</ion-footer-bar>
