@@ -53,11 +53,6 @@ angular.
           cssClass:'popUp'
         })
       };
-      this.infoClicked = false;
-      
-      this.info = function(){
-        this.infoClicked = !this.infoClicked;
-      }
     }
   ]
 });

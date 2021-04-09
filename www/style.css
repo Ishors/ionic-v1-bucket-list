@@ -59,9 +59,9 @@
 .square{
     padding: 5px;
     display: inline-block;
-    border-radius: 2px;
-    width: 15px;
-    height: 15px;
+    border-radius: 150px;
+    width: 40px;
+    height: 75px;
     color:white;
 }
 
