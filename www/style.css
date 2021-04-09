@@ -59,9 +59,9 @@
 .square{
     padding: 5px;
     display: inline-block;
-    border-radius: 150px;
-    width: 40px;
-    height: 75px;
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
     color:white;
 }
 
@@ -101,8 +101,10 @@
     background-color:white;
     display:flex;
     justify-content: center;
+    margin: -15px;
 }
 
 .zoomyzoom{
     zoom: 1.2;
 }
+
