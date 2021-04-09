@@ -1,8 +1,10 @@
 <ion-content class="background">
   <div class="reduce-size">
   </div>
-  <ul class="list">
-    <li class="item">
+
+  <ul class="list" style="background: white">
+    <li class="info " ng-click="$ctrl.info()"><i class="icon ion-chevron-down zoomyzoom" ></i>
+    <li class="item" ng-if="$ctrl.infoClicked">
       <div class="non">
         <h2 class="text-center">Date limite</h2>
       </div>

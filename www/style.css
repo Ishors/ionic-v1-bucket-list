@@ -8,7 +8,7 @@
 }
 
 .red{
-    background: rgba(128, 0, 0);
+    background: linear-gradient(103.3deg, rgb(221, 27, 43) 7.7%, rgb(238, 103, 103) 90.8%);
 }
 
 .blue{
@@ -94,4 +94,15 @@
 .footyfoot{
     display: flex;
     justify-content: center;
+}
+
+.info{
+    height: 20px;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+}
+
+.zoomyzoom{
+    zoom: 1.2;
 }

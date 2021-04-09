@@ -17,10 +17,9 @@ angular.
         {id: 8, title: "Voyage Amérique du Sud", description: "Salar et compagnie, me voilà !", dueDate: 2023, photo: "voyage-amerique-du-sud.png", completed: false},
         {id: 9, title: "Vivre dans les bois", description: "Laisse tomber le kiff interdimentionnel", dueDate: 2070, photo: "vivre-dans-les-bois.png", completed: false}
       ];
-      wishList.sort(function(a, b) {
+      this.wishes = wishList.sort(function(a, b) {
         return a.dueDate - b.dueDate;
       });
-      this.wishes = wishList;
       this.details = function(title){
         var tempTitle, tempDesc, tempDueDate, tempPhoto;
         for (var i = 0; i < this.wishes.length; i++) {
@@ -54,6 +53,11 @@ angular.
           cssClass:'popUp'
         })
       };
+      this.infoClicked = false;
+      
+      this.info = function(){
+        this.infoClicked = !this.infoClicked;
+      }
     }
-    ]
-  });
+  ]
+});
