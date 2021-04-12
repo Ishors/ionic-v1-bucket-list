@@ -20,6 +20,9 @@ angular.
       this.wishes = wishList.sort(function(a, b) {
         return a.dueDate - b.dueDate;
       });
+
+      this.notWishes = {title: "Seems like there is no matching item in your bucket list"};
+
       this.details = function(title){
         var tempTitle, tempDesc, tempDueDate, tempPhoto;
         for (var i = 0; i < this.wishes.length; i++) {
@@ -40,7 +43,7 @@ angular.
           title:'<img class="full-image rounded" src="img/' + tempPhoto + '">',
           template:
           '<h3>'+tempTitle+'</h3>'+
-          '<p class="italic">Date limite : '+tempDueDate+'</p>'+
+          '<p class="italic">Deadline : '+tempDueDate+'</p>'+
           '<p>'+tempDesc+'</p>',
           /*buttons: [
             {
