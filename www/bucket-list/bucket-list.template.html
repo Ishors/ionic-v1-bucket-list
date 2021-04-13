@@ -9,23 +9,23 @@
     </label>
   </div>
 
-    <div scroll="true" class="card rounded contourned" ng-repeat="wish in $ctrl.wishes | filter:$ctrl.query">
-      <div class="item item-text-wrap" ng-click="$ctrl.details(wish.title)"
-        ng-style="{'background-image': 'url(img/'+wish.photo+')', 'color':'white', 'background-position': 'center'}"
-        ng-class="wish.dueDate >= 2022 ? 'green' : (wish.dueDate < 2021 ? 'red' : 'orange')">
-        <div class="stroke">
-          <div ng-class="wish.dueDate >= 2022 ? 'blue' : (wish.dueDate < 2021 ? 'red' : 'orange')" class="hashtag">#{{
-            wish.id }}</div>
-          {{ wish.title }}
-        </div>
+  <div scroll="true" class="card rounded contourned" ng-repeat="wish in $ctrl.wishes | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+    <div class="item item-text-wrap" ng-click="$ctrl.details(wish.title)"
+      ng-style="{'background-image': 'url(img/'+wish.photo+')', 'color':'white', 'background-position': 'center'}">
+      <div class="stroke">
+        <div ng-class="wish.deadline >= 2022 ? 'blue' : (wish.deadline < 2021 ? 'red' : 'orange')" class="hashtag">#{{
+          wish.id }}</div>
+        {{ wish.title }}
       </div>
     </div>
+  </div>
 
   <div class="card rounded contourned" ng-hide="($ctrl.wishes|filter:$ctrl.query).length">
     <div class="item item-text-wrap">
       <p style="color: black">No matching item in your bucket list</p>
     </div>
   </div>
+  
 </ion-content>
   
 <ion-footer-bar>
