@@ -8,6 +8,7 @@ angular.
 
     controller: ['$ionicPopup','$rootScope','$http', function BucketListController($ionicPopup, $rootScope, $http) {
       var self = this;
+
       self.currentDate = new Date();
 
       self.newWish = function(){
@@ -22,7 +23,7 @@ angular.
                 "<input type='text' ng-model='data.title' placeholder='Title' required>"+
               "</label>"+
               "<label class='item item-input'>"+
-                "<input type='number' ng-model='data.deadline' min='"+this.currentDate.getFullYear()+"' placeholder='Deadline' required>"+
+                "<input type='number' ng-model='data.deadline' min='"+self.currentDate.getFullYear()+"' placeholder='Deadline year' required>"+
               "</label>"+
               "<label class='item item-input'>"+
                 "<input type='text' ng-model='data.description' placeholder='Description' required>"+
@@ -38,6 +39,7 @@ angular.
               text: 'Add',
               type: 'button-positive',
               onTap: function(e) {
+                
                 if (!$scope.data.title || !$scope.data.deadline || !$scope.data.description) {
                    //don't allow the user to close unless he enters model...
                    e.preventDefault();
@@ -78,7 +80,6 @@ angular.
               });
             });
           }
-
         });
       };
     }]

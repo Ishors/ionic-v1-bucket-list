@@ -15,12 +15,12 @@ angular.
       });
 
       self.details = function(title){
-        var tempTitle, tempDesc, tempDueDate, tempPhoto;
+        var tempTitle, tempDesc, tempDeadline, tempPhoto;
         for (var i = 0; i < self.wishes.length; i++) {
           if (self.wishes[i].title == title) {
             tempTitle = self.wishes[i].title;
             tempDesc = self.wishes[i].description;
-            tempDueDate = self.wishes[i].dueDate;
+            tempDeadline = self.wishes[i].deadline;
             tempPhoto = self.wishes[i].photo;
           }
         }
@@ -28,7 +28,7 @@ angular.
           title:'<img class="full-image rounded" src="img/' + tempPhoto + '">',
           template:
           '<h3>'+tempTitle+'</h3>'+
-          '<p class="italic">Deadline : '+tempDueDate+'</p>'+
+          '<p class="italic">Deadline : '+tempDeadline+'</p>'+
           '<p>'+tempDesc+'</p>',
           cssClass:'popUp'
         })
